@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+    <head>
+        <title>GuardMe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'main/css/predict.css' %}">
+    </head>
+    <body>
+        <div id="container">
+            <div id="input">Lat: {{ latitude }} Long: {{ longitude }}<br>{{ date }} {{ time }}</div>
+            <div id="center">
+                {% for prediction in predictions %}
+                    <div id="prediction">{{ prediction.crime }}<br>{{ prediction.percentage }}%</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="back" onclick="location.href='/'">Back</div>
+    </body>
+</html>

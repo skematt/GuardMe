@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+    <head>
+        <title>GuardMe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'main/css/input_data.css' %}">
+    </head>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            <div class="dropdown">
+                <datalist id="choices">
+                    {% for choice in choices %}
+                        <option>{{ choice }}</option>
+                    {% endfor %}
+                </datalist>
+                <input list="choices" id="crime" name="crime" placeholder="Crime">
+            </div>
+            <input type="text" id="address" name="address" placeholder="Address"><br>
+            <input type="number" id="latitude" name="latitude" placeholder="Latitude" step="any" value="{{ latitude }}"><br>
+            <input type="number" id="longitude" name="longitude" placeholder="Longitude" step="any"value="{{ longitude }}"><br>
+            <input type="date" id="date" name="date" placeholder="Date" value="{{ date }}"><br>
+            <input type="time" id="time" name="time" placeholder="Time" value="{{ time }}"><br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+    <div id="back" onclick="location.href='/'">Back</div>
+</html>

@@ -1,0 +1,61 @@
+html{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+body{
+    margin-top: 20px;
+}
+
+#container{
+    padding: 10px;
+    max-width: 80%;
+    font-family: monospace;
+    font-weight: bold;
+    margin: auto;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+#back{
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#input{
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#prediction{
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 490;
+}

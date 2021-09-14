@@ -1,0 +1,48 @@
+html{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+table{
+    margin-top: 15px;
+    max-width: 90%;
+    border-collapse: collapse;
+}
+
+tr{
+    border: solid;
+    border-color: white;
+}
+
+td{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#first{
+    margin-top: 15px;
+}
+
+#last{
+    margin-bottom: 15px;
+}
+
+#back{
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    background-color: black;
+    position: sticky;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}

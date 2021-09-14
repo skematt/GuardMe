@@ -1,0 +1,21 @@
+{% load static %}
+{% load staticfiles %}
+<html>
+    <head>
+        <title>GuardMe</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+        <script>
+            window.onscroll = function () {
+                window.scrollTo(0, 0);
+            };
+        </script>
+    </head>
+    <body scroll="no">
+            <iframe allowtransparency="true" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~JhihYangWu/0.embed" height="1050px" width="200%"></iframe>
+        <img src="{% static 'main/images/Logo.png' %}">
+        <button onclick="document.location='/input/'" id="report">Report</button>
+        <button onclick="document.location='/view/'" id="data">View</button>
+        <button onclick="document.location='/predict/34.0176/-118.3458/'" id="predict">Predict</button>
+    </body>
+</html>

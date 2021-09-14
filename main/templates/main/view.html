@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>GuardMe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'main/css/view.css' %}">
+    </head>
+    <body>
+        <table align="center">
+            {% for crime in crimes %}
+                <tr>
+                    <td id="first">{{ crime.crime }}</td>
+                    <td>{{ crime.date }} {{ crime.time }}</td>
+                    <td>{{ crime.address }}</td>
+                    <td id="last">{{ crime.location }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <div id="back" onclick="location.href='/'">Back</div>
+    </body>
+</html>
